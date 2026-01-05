@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing the use of forms</title>
+</head>
+<body>
+
+    <!-- page header -->
+
+    <header>
+
+        <!-- title of the form -->
+
+        <h1>Art Workshop Registration</h1> 
+         
+    </header>
+
+
+    <!-- page contence -->
+
+    <main>
+
+        <!-- registration form -->
+
+        <form method="post">
+
+            <fieldset>
+
+                <!-- area for filling in personal information -->
+
+                <legend>Personal information</legend>
+                <label for="name" >Full Name</label><br>
+                <input type="text" id="name" name="name" placeholder="example" required><br>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+                <label for="date_of_birth">Date of Birth</label><br>
+                <input type="date" name="date_of_birth" id="date_of_birth" required><br>
+                
+            </fieldset>
+
+            <fieldset>
+
+                <!-- fill in the area regarding artistic technique preferences -->
+
+                <legend>Artistic technique preferences</legend>
+
+                <input type="radio" id="technique1" name="technique"  value="watercolor" required>
+                <label for="technique1">Watercolor</label><br>
+                <input type="radio" id="technique2" name="technique"  value="drawing">
+                <label for="technique2">Drawing</label><br>
+                <input type="radio" id="technique3" name="technique"  value="digitalart">
+                <label for="technique3">Digital Art</label><br>
+                
+            </fieldset>
+
+            <fieldset>
+
+                <!-- fill in the area for skill level information -->
+
+                <legend>Experience Level</legend>
+
+                <input type="radio" id="level1" name="level"  value="beginner" required>
+                <label for="level1">beginner</label><br>
+                <input type="radio" id="level2" name="level"  value="intermediate">
+                <label for="level2">intermediate</label><br>
+                <input type="radio" id="level3" name="level"  value="advanced">
+                <label for="level3">advanced</label><br>
+                
+            </fieldset>
+
+            <fieldset>
+
+                <!-- fill in the area regarding prior experience with watercolor -->
+
+                <legend>Have you worked with watercolor before?</legend>
+
+                <input type="radio" id="yes" name="response"  value="yes" required>
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="response"  value="no">
+                <label for="no">No</label><br>
+                
+            </fieldset>
+
+            <fieldset>
+
+                <!-- fill in the area for the reason for use -->
+
+                <legend>Why do you want to join this workshop?</legend>
+
+                <textarea name="notes" id="notes" placeholder="write here." required></textarea>
+                
+            </fieldset>
+
+
+            <!-- submit and reset buttons -->
+
+            <button type="submit">Submit Registration</button>
+
+            <button type="reset">Reset Form</button>
+
+            
+
+        </form>
+
+    </main>
+
+
+    <!-- page footer -->
+
+    <footer>
+
+        <p>Art Workshop – Registration Form</p>
+
+    </footer>
+</body>
+</html>
